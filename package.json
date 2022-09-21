@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "studybot",
-  "homepage": "https://studybot.draftbit.app",
-  "description": "StudyBot, powered by Draftbit",
+  "name": "demo-app",
+  "homepage": "https://demo-app.draftbit.app",
+  "description": "Demo App, powered by Draftbit",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -19,8 +19,7 @@
   "dependencies": {
     "@draftbit/maps": "~46.1.4",
     "@draftbit/ui": "46.2.3",
-    "@expo-google-fonts/noto-sans": "*",
-    "@expo-google-fonts/noto-serif": "*",
+    "@expo-google-fonts/abeezee": "*",
     "@expo/vector-icons": "^13.0.0",
     "@expo/webpack-config": "^0.17.0",
     "@react-native-async-storage/async-storage": "~1.17.3",
@@ -33,7 +32,6 @@
     "@react-navigation/native": "^5.8.10",
     "@react-navigation/stack": "^5.12.8",
     "@shopify/mime-types": "^2.0.0",
-    "@supabase/supabase-js": "latest",
     "expo": "~46.0.7",
     "expo-asset": "~8.6.1",
     "expo-av": "~12.0.3",
@@ -57,7 +55,6 @@
     "react-dom": "18.0.0",
     "react-fetch-hook": "1.8.5",
     "react-native": "0.69.4",
-    "react-native-calendars": "latest",
     "react-native-gesture-handler": "~2.5.0",
     "react-native-keyboard-aware-scroll-view": "~0.9.5",
     "react-native-maps": "0.31.1",
@@ -70,7 +67,8 @@
     "react-native-web-swiper": "^2.2.3",
     "react-native-webview": "11.23.0",
     "react-query": "^3.27.0",
-    "react-request": "^3.1.2"
+    "react-request": "^3.1.2",
+    "victory-native": "latest"
   },
   "resolutions": {
     "react-native-web": "0.18.7"

@@ -19,42 +19,7 @@ const linking = {
   enabled: Platform.OS === 'web' ? false : true,
   prefixes: [prefix],
   config: {
-    screens: {
-      BottomTabNavigator: {
-        screens: {
-          LearnNavigator: {
-            screens: {},
-          },
-          MainNavigator: {
-            screens: {},
-          },
-        },
-        LearnNavigator: {
-          screens: {},
-        },
-        MainNavigator: {
-          screens: {},
-        },
-      },
-      AuthNavigator: {
-        screens: {
-          AuthregistrationScreen: {
-            screens: {
-              AuthregistrationScreen: {
-                path: 'AuthregistrationScreen',
-              },
-            },
-          },
-          AuthpasswordupdateScreen: {
-            screens: {
-              AuthpasswordupdateScreen: {
-                path: 'AuthpasswordupdateScreen/:nav_param?',
-              },
-            },
-          },
-        },
-      },
-    },
+    screens: {},
   },
 };
 

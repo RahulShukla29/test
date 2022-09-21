@@ -3,35 +3,8 @@ import { View, ActivityIndicator } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const DeviceVariables = {
-  AUTHORIZATION_HEADER: '',
-  expiresAt: 0,
-  LESSON_LABEL_CURRENT: '',
-  ONB_CHAT_FIRST_LOGIN_DONE: false,
-  ONB_JOURNEY_1: false,
-  ONB_LEARN_1: false,
-  ONB_MAIN_1: false,
-  ONB_MAIN_2: false,
-  ONB_NOTES: 'to_be_implemented',
-  ONB_SOCIAL_1: false,
-  ONB_SUPPORT_1: false,
-  REFRESH_TOKEN: '',
-  USER_CHECKIN_DAY_COMPLETED_LATEST: '-',
-  USER_ID: '-',
-  USER_JSON: [{}],
-  USER_ONBOARDING_CHAT_COMPLETED: false,
-  USER_UUID_VAL: '-',
-};
-const AppVariables = {
-  AIRTABLE_API_KEY: 'Bearer keypHqUl0OxJyYiF4',
-  CHATBOT_APP_CHECK_MAIN: '7a48b463-fcc4-4b70-8525-4b0f886d282b',
-  CHATBOT_URL_MAIN:
-    'https://chats.landbot.io/v3/H-946007-650R4RE7EKCZ7CGZ/index.html',
-  ERROR_MESSAGE: '',
-  SUPABASE_API_KEY_HEADER:
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp0eGh1aWV6c25yd251cHd6aW1jIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDYwMDYyMjUsImV4cCI6MTk2MTU4MjIyNX0.m3JpiNt9kizwo94s0YTqtWjha_anHJULu4Db08APnOw',
-  TEMP_JSON: [{}],
-};
+const DeviceVariables = {};
+const AppVariables = {};
 const GlobalVariableContext = React.createContext();
 const GlobalVariableUpdater = React.createContext();
 

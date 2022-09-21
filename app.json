@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "StudyBot",
-    "slug": "studybot",
-    "scheme": "studybot",
-    "description": "An academic coaching app for college students",
+    "name": "Demo App",
+    "slug": "demo-app",
+    "scheme": "demo-app",
+    "description": "My app powered by Draftbit",
     "privacy": "unlisted",
     "platforms": [
       "ios",
@@ -11,18 +11,18 @@
       "web"
     ],
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/images/icon.png",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "cover",
-      "backgroundColor": "#025476"
+      "backgroundColor": "#5A45FF"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "io.studybot.studybot",
+      "bundleIdentifier": "com.draftbit.untitledapp",
       "supportsTablet": false,
       "buildNumber": "1.0.0",
       "infoPlist": {},
@@ -30,10 +30,8 @@
     },
     "android": {
       "versionCode": 1,
-      "package": "io.studybot.studybot",
-      "permissions": [
-        "VIBRATE"
-      ]
+      "package": "com.draftbit.untitledapp",
+      "permissions": []
     },
     "web": {
       "themeColor": "#000000"

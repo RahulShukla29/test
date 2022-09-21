@@ -14,15 +14,7 @@ import DraftbitTheme from './themes/DraftbitTheme.js';
 import cacheAssetsAsync from './config/cacheAssetsAsync';
 import { GlobalVariableProvider } from './config/GlobalVariableContext';
 import { useFonts } from 'expo-font';
-import {
-  NotoSans_400Regular,
-  NotoSans_400Regular_Italic,
-  NotoSans_700Bold,
-} from '@expo-google-fonts/noto-sans';
-import {
-  NotoSerif_400Regular,
-  NotoSerif_700Bold,
-} from '@expo-google-fonts/noto-serif';
+import { ABeeZee_400Regular } from '@expo-google-fonts/abeezee';
 SplashScreen.preventAutoHideAsync();
 
 Notifications.setNotificationHandler({
@@ -37,56 +29,7 @@ const queryClient = new QueryClient();
 
 const App = () => {
   const [isReady, setIsReady] = React.useState(false);
-  const [fontsLoaded] = useFonts({
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular,
-    NotoSans_400Regular_Italic,
-    NotoSans_700Bold,
-    NotoSans_700Bold,
-    NotoSans_700Bold,
-    NotoSans_700Bold,
-    NotoSans_700Bold,
-    NotoSans_700Bold,
-    NotoSans_700Bold,
-    NotoSans_700Bold,
-    NotoSans_700Bold,
-    NotoSans_700Bold,
-    NotoSans_700Bold,
-    NotoSans_700Bold,
-    NotoSans_700Bold,
-    NotoSerif_400Regular,
-    NotoSerif_400Regular,
-    NotoSerif_400Regular,
-    NotoSerif_400Regular,
-    NotoSerif_400Regular,
-    NotoSerif_400Regular,
-    NotoSerif_400Regular,
-    NotoSerif_400Regular,
-    NotoSerif_700Bold,
-    NotoSerif_700Bold,
-    NotoSerif_700Bold,
-    NotoSerif_700Bold,
-    NotoSerif_700Bold,
-    NotoSerif_700Bold,
-    NotoSerif_700Bold,
-    NotoSerif_700Bold,
-    NotoSerif_700Bold,
-    NotoSerif_700Bold,
-    NotoSerif_700Bold,
-    NotoSerif_700Bold,
-  });
+  const [fontsLoaded] = useFonts({ ABeeZee_400Regular });
 
   React.useEffect(() => {
     async function prepare() {
