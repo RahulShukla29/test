@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Demo App",
-    "slug": "demo-app",
-    "scheme": "demo-app",
+    "name": "Cool Buttons",
+    "slug": "cool-buttons",
+    "scheme": "cool-buttons",
     "description": "My app powered by Draftbit",
     "privacy": "unlisted",
     "platforms": [

@@ -13,8 +13,6 @@ import AppNavigator from './AppNavigator';
 import DraftbitTheme from './themes/DraftbitTheme.js';
 import cacheAssetsAsync from './config/cacheAssetsAsync';
 import { GlobalVariableProvider } from './config/GlobalVariableContext';
-import { useFonts } from 'expo-font';
-import { ABeeZee_400Regular } from '@expo-google-fonts/abeezee';
 SplashScreen.preventAutoHideAsync();
 
 Notifications.setNotificationHandler({
@@ -29,7 +27,7 @@ const queryClient = new QueryClient();
 
 const App = () => {
   const [isReady, setIsReady] = React.useState(false);
-  const [fontsLoaded] = useFonts({ ABeeZee_400Regular });
+  const fontsLoaded = true;
 
   React.useEffect(() => {
     async function prepare() {

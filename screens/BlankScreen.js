@@ -1,50 +1,55 @@
 import React from 'react';
-import {
-  ButtonSolid,
-  ScreenContainer,
-  Swiper,
-  SwiperItem,
-  withTheme,
-} from '@draftbit/ui';
-import { Image, Modal, StyleSheet, Text, View } from 'react-native';
+import Images from '../config/Images';
+import * as CustomButton from '../custom-files/CustomButton.js';
+import * as Utils from '../utils';
+import { ButtonSolid, ScreenContainer, withTheme } from '@draftbit/ui';
+import { Image, StyleSheet, View } from 'react-native';
 
 const BlankScreen = props => {
   const { theme } = props;
 
-  const [Name, setName] = React.useState('Draftbit');
-  const [showModal, setShowModal] = React.useState(false);
-
   return (
     <ScreenContainer hasSafeArea={false} scrollable={false}>
-      {/* Header */}
-      <Text style={[styles.Textfc95c443, { color: theme.colors.strong }]}>
-        {props.route?.params?.greeting ?? 'Hi'} {Name}
-      </Text>
-      <Modal visible={showModal} animationType={'none'} />
+      <View style={styles.View3ea2d9b8}>
+        <Utils.CustomCodeErrorBoundary>
+          <CustomButton.ButtonLike>
+            <ButtonSolid
+              style={[
+                styles.ButtonSolidb2c8d410,
+                { backgroundColor: theme.colors.primary },
+              ]}
+              title={'Get Started'}
+            />
+          </CustomButton.ButtonLike>
+        </Utils.CustomCodeErrorBoundary>
+      </View>
+
+      <View style={styles.View3ea2d9b8}>
+        <Utils.CustomCodeErrorBoundary>
+          <CustomButton.ButtonLike>
+            <Image style={styles.Imagee65b0c4c} source={Images.Icon} />
+          </CustomButton.ButtonLike>
+        </Utils.CustomCodeErrorBoundary>
+      </View>
     </ScreenContainer>
   );
 };
 
 const styles = StyleSheet.create({
-  ButtonSolid6f6d9f4b: {
+  ButtonSolidb2c8d410: {
     borderRadius: 8,
     fontFamily: 'System',
     fontWeight: '700',
-    marginLeft: 16,
-    marginRight: 16,
     textAlign: 'center',
+    width: 200,
   },
   Imagee65b0c4c: {
     height: 250,
     width: 250,
   },
-  Swiper4f06a827: {
-    height: 300,
-    width: '100%',
-  },
-  Textfc95c443: {
-    alignSelf: 'center',
-    fontFamily: 'ABeeZee_400Regular',
+  View3ea2d9b8: {
+    alignItems: 'center',
+    flex: 1,
   },
 });
 
