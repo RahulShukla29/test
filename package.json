@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "cool-buttons",
-  "homepage": "https://cool-buttons.draftbit.app",
-  "description": "Cool Buttons, powered by Draftbit",
+  "name": "test-app",
+  "homepage": "https://test-app.draftbit.app",
+  "description": "Deeplink Test, powered by Draftbit",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -17,8 +17,9 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@draftbit/maps": "~46.3.0",
-    "@draftbit/ui": "46.3.0",
+    "@draftbit/maps": "~46.4.0",
+    "@draftbit/ui": "46.4.0",
+    "@expo-google-fonts/open-sans": "*",
     "@expo/vector-icons": "^13.0.0",
     "@expo/webpack-config": "^0.17.0",
     "@react-native-async-storage/async-storage": "~1.17.3",
@@ -30,6 +31,7 @@
     "@react-navigation/drawer": "^5.7.4",
     "@react-navigation/native": "^5.8.10",
     "@react-navigation/stack": "^5.12.8",
+    "@shopify/flash-list": "1.2.0",
     "@shopify/mime-types": "^2.0.0",
     "expo": "~46.0.7",
     "expo-asset": "~8.6.1",

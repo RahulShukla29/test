@@ -19,7 +19,22 @@ const linking = {
   enabled: Platform.OS === 'web' ? false : true,
   prefixes: [prefix],
   config: {
-    screens: {},
+    screens: {
+      HomeScreen: {
+        screens: {
+          HomeScreen: {
+            path: 'HomeScreen/:test?',
+          },
+        },
+      },
+      LinkScreen: {
+        screens: {
+          LinkScreen: {
+            path: 'LinkScreen/:test?',
+          },
+        },
+      },
+    },
   },
 };
 

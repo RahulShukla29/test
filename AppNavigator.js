@@ -8,7 +8,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import theme from './themes/DraftbitTheme.js';
 import LinkingConfiguration from './LinkingConfiguration.js';
 
-import BlankScreen from './screens/BlankScreen';
+import HomeScreen from './screens/HomeScreen';
+import LinkScreen from './screens/LinkScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -66,11 +67,16 @@ function Placeholder() {
 export default function RootAppNavigator() {
   return (
     <NavigationContainer linking={LinkingConfiguration}>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="HomeScreen">
         <Stack.Screen
-          name="BlankScreen"
-          component={BlankScreen}
-          options={{ title: 'Blank' }}
+          name="HomeScreen"
+          component={HomeScreen}
+          options={{ title: 'Home' }}
+        />
+        <Stack.Screen
+          name="LinkScreen"
+          component={LinkScreen}
+          options={{ title: 'Link' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

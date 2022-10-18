@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Cool Buttons",
-    "slug": "cool-buttons",
-    "scheme": "cool-buttons",
+    "name": "Deeplink Test",
+    "slug": "test-app",
+    "scheme": "test-app",
     "description": "My app powered by Draftbit",
     "privacy": "unlisted",
     "platforms": [
@@ -30,7 +30,7 @@
     },
     "android": {
       "versionCode": 1,
-      "package": "com.draftbit.untitledapp",
+      "package": "com.test.deeplink.app",
       "permissions": []
     },
     "web": {

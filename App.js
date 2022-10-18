@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { AppState } from 'react-native';
 import * as Notifications from 'expo-notifications';
 import * as SplashScreen from 'expo-splash-screen';
 import {
   SafeAreaProvider,
   initialWindowMetrics,
 } from 'react-native-safe-area-context';
+import { View, Text, ActivityIndicator, AppState } from 'react-native';
 import { Provider as ThemeProvider } from '@draftbit/ui';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
@@ -13,6 +13,11 @@ import AppNavigator from './AppNavigator';
 import DraftbitTheme from './themes/DraftbitTheme.js';
 import cacheAssetsAsync from './config/cacheAssetsAsync';
 import { GlobalVariableProvider } from './config/GlobalVariableContext';
+import { useFonts } from 'expo-font';
+import {
+  OpenSans_700Bold,
+  OpenSans_800ExtraBold,
+} from '@expo-google-fonts/open-sans';
 SplashScreen.preventAutoHideAsync();
 
 Notifications.setNotificationHandler({
@@ -27,7 +32,7 @@ const queryClient = new QueryClient();
 
 const App = () => {
   const [isReady, setIsReady] = React.useState(false);
-  const fontsLoaded = true;
+  const [fontsLoaded] = useFonts({ OpenSans_700Bold, OpenSans_800ExtraBold });
 
   React.useEffect(() => {
     async function prepare() {
