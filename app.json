@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Deeplink Test",
-    "slug": "test-app",
-    "scheme": "test-app",
+    "name": "Deeplinking WIth Live Preview",
+    "slug": "deeplinking-w-ith-live-preview",
+    "scheme": "deeplinking-w-ith-live-preview",
     "description": "My app powered by Draftbit",
     "privacy": "unlisted",
     "platforms": [
@@ -30,7 +30,7 @@
     },
     "android": {
       "versionCode": 1,
-      "package": "com.test.deeplink.app",
+      "package": "com.draftbit.untitledapp",
       "permissions": []
     },
     "web": {

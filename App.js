@@ -13,11 +13,6 @@ import AppNavigator from './AppNavigator';
 import DraftbitTheme from './themes/DraftbitTheme.js';
 import cacheAssetsAsync from './config/cacheAssetsAsync';
 import { GlobalVariableProvider } from './config/GlobalVariableContext';
-import { useFonts } from 'expo-font';
-import {
-  OpenSans_700Bold,
-  OpenSans_800ExtraBold,
-} from '@expo-google-fonts/open-sans';
 SplashScreen.preventAutoHideAsync();
 
 Notifications.setNotificationHandler({
@@ -32,7 +27,7 @@ const queryClient = new QueryClient();
 
 const App = () => {
   const [isReady, setIsReady] = React.useState(false);
-  const [fontsLoaded] = useFonts({ OpenSans_700Bold, OpenSans_800ExtraBold });
+  const fontsLoaded = true;
 
   React.useEffect(() => {
     async function prepare() {

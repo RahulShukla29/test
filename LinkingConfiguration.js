@@ -20,17 +20,10 @@ const linking = {
   prefixes: [prefix],
   config: {
     screens: {
-      HomeScreen: {
+      TestScreen: {
         screens: {
-          HomeScreen: {
-            path: 'HomeScreen/:test?',
-          },
-        },
-      },
-      LinkScreen: {
-        screens: {
-          LinkScreen: {
-            path: 'LinkScreen/:test?',
+          TestScreen: {
+            path: 'TestScreen/:para?/:meter?',
           },
         },
       },
