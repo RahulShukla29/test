@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Deeplinking WIth Live Preview",
-    "slug": "deeplinking-w-ith-live-preview",
-    "scheme": "deeplinking-w-ith-live-preview",
+    "name": "Maps",
+    "slug": "maps",
+    "scheme": "maps",
     "description": "My app powered by Draftbit",
     "privacy": "unlisted",
     "platforms": [
@@ -12,9 +12,9 @@
     ],
     "version": "1.0.0",
     "orientation": "default",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/app/icon.png",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/app/splash.png",
       "resizeMode": "cover",
       "backgroundColor": "#5A45FF"
     },
@@ -31,7 +31,12 @@
     "android": {
       "versionCode": 1,
       "package": "com.draftbit.untitledapp",
-      "permissions": []
+      "permissions": [],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBOhlLGr8quFdfzhJc-0wHoIln2RIflo58"
+        }
+      }
     },
     "web": {
       "themeColor": "#000000"

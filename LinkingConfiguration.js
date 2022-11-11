@@ -19,15 +19,7 @@ const linking = {
   enabled: Platform.OS === 'web' ? false : true,
   prefixes: [prefix],
   config: {
-    screens: {
-      TestScreen: {
-        screens: {
-          TestScreen: {
-            path: 'TestScreen/:para?/:meter?',
-          },
-        },
-      },
-    },
+    screens: {},
   },
 };
 

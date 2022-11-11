@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "deeplinking-w-ith-live-preview",
-  "homepage": "https://deeplinking-w-ith-live-preview.draftbit.app",
-  "description": "Deeplinking WIth Live Preview, powered by Draftbit",
+  "name": "maps",
+  "homepage": "https://maps.draftbit.app",
+  "description": "Maps, powered by Draftbit",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -19,6 +19,7 @@
   "dependencies": {
     "@draftbit/maps": "~46.4.3",
     "@draftbit/ui": "46.4.3",
+    "@expo/dev-server": "0.1.120",
     "@expo/vector-icons": "^13.0.0",
     "@expo/webpack-config": "^0.17.0",
     "@react-native-async-storage/async-storage": "~1.17.3",
@@ -54,7 +55,7 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-fetch-hook": "1.8.5",
-    "react-native": "0.69.5",
+    "react-native": "0.69.6",
     "react-native-gesture-handler": "~2.5.0",
     "react-native-keyboard-aware-scroll-view": "~0.9.5",
     "react-native-maps": "0.31.1",
